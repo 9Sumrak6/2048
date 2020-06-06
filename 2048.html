@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<canvas id = "canvas"></canvas>
+	<script> 
+		document.addEventListener("keydown", function(e) {
+			if (e.code == "ArrowLeft")
+				console.log(e)
+			else
+				console.log(0)
+		})
+	</script>
+	<script src="field.js"></script>
+	<script>
+		let canvas = document.getElementById("canvas")
+		
+		canvas.height = 560 
+		canvas.width = 520
+
+		let field = new Field()
+		
+		field.Draw(canvas)
+	</script>
+</body>
+</html>
